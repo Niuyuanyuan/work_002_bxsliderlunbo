@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bxsliderlunbo</title>
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+	<ul class="bxslider">
+	  <li><img src="./images/pic1.jpg" title="11" /></li>
+	  <li><img src="./images/pic2.jpg"  title="12" /></li>
+	  <li><img src="./images/pic3.jpg"  title="13" /></li>
+	  <li><img src="./images/pic4.jpg"  title="14" /></li>
+    </ul>
+</body>
+<!-- jQuery library (served from Google) -->
+<script src="js/jquery-1.9.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="js/jquery.bxslider.min.js"></script>
+<script>
+	  $('.bxslider').bxSlider({
+	  	mode:'horizontal',
+	  	//设置滑动模式，'horizontal':水平, 'vertical':垂直, 'fade':淡入淡出，默认值是：horizontal
+
+	  	speed:300, 
+	  	 //内容切换速度，数字，ms，默认值是：500
+
+	  	startSlide:0,
+	  	//	初始滑动位置，数字
+
+	  	randomStart:false,
+	  	//随机初始滑动位置，默认值是：true
+
+	  	infiniteLoop:true,	
+	  	//循环滑动，如果设置为true时，则到最后滑动位置时会切换到初始位置
+
+	  	easing:null,
+	  	//切换动画扩展，可以借助jQuery Easing 动画效果扩展设置不同的切换动画效果
+
+	  	captions:false,
+	  	//设置显示图片标题，当滑动内容为图片时并设置属性title，可以显示图片标题,默认值是：false
+
+	  	video:false,
+	  	//支持视频，当设置为true时，需要jquery.fitvids.js支持,默认值是：false
+
+	  	pager:true,
+	  	//设置是否显示分页，设置为true时，会在滑动内容下方显示分页图标,默认值是：true
+
+	  	pause:1500,
+	  	//自动滑动时停留时间，数字，ms,默认：4000
+
+	  	auto:true,
+	  	//设置是否自动滑动,默认：false
+
+	  	autoHover:false
+	  	//当鼠标滑向滑动内容上时，是否暂停滑动
+	  });
+	  
+
+</script>
+</html>
